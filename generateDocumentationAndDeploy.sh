@@ -62,8 +62,14 @@ echo "" > .nojekyll
 ################################################################################
 ##### Generate the Doxygen code documentation and log the output.          #####
 echo 'Generating Doxygen code documentation...'
+
+cd ../..
+( cat doxyfile ; echo "OUTPUT_DIRECTORY=docs/steamUtils" )| doxygen - | tee doxygen.log
 # Redirect both stderr and stdout to the log file AND the console.
-doxygen $DOXYFILE 2>&1 | tee doxygen.log
+#doxygen $DOXYFILE 2>&1 | tee doxygen.log
+
+cd docs/
+cd $GH_REPO_NAME
 
 ################################################################################
 ##### Upload the documentation to the gh-pages branch of the repository.   #####
@@ -86,7 +92,7 @@ if [ -d "html" ] && [ -f "html/index.html" ]; then
     # Force push to the remote gh-pages branch.
     # The ouput is redirected to /dev/null to hide any sensitive credential data
     # that might otherwise be exposed.
-    git push --force "https://${GH_REPO_TOKEN}@${GH_REPO_REF}" > /dev/null 2>&1
+    git push --force "https://${GH_REPO_TOKEN}@${GH_REPO_REF}"
 else
     echo '' >&2
     echo 'Warning: No documentation (html) files have been found!' >&2
