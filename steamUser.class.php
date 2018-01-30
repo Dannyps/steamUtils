@@ -5,8 +5,9 @@ namespace Dannyps\Steam;
 require("steamID.class.php");
 
 /**
- * @brief Useful functions to convert SteamIDs and extract information from %Steam about Users.
- * There are several representations for steam IDs.
+ * @brief Useful functions to convert SteamIDs and extract information from %Steam about Users.\n
+ * There are several representations for steam IDs. Check them out at \ref steamIDFormats.\n
+ * You can also use the customURL nick defined by the user. (e.g. `http://steamcommunity.com/id/nick`)
  *
  * @author Daniel Silva <mail@dannyps.net>
  * 
@@ -18,9 +19,25 @@ class SteamUser extends SteamID{
 	/** @brief The XML content corresponding to the user's page. */
 	private $XML=NULL;
 
-	/** @brief parse the STeamID and fetch the XML content from the steam Servers. */
+    /** @param $id a steamID in any of the **three formats** supported, or the customURL **nick**.
+     * @throw -1 on invalid %SteamID.
+     * */
 	public function __construct($id){
-		parent::__construct($id);
+		try{
+			parent::__construct($id);
+		}catch (\Exception $e) {
+			if($e->getcode()==-1){ //invalid steamid
+				// There is one more thing we can try before giving up.
+				if($this->getXMLbyURLnick($id)==-1){
+					// Looks like the nick was a bad one.
+					throw new \Exception("The string passed as SteamID does not identify any user!", -2);
+				}
+				return;
+			}else{
+				throw $e;
+			}
+			
+		}
 		$this->getXML();
 	}
 
@@ -29,6 +46,29 @@ class SteamUser extends SteamID{
 		if($this->XML==NULL){ // we don't have it yet.
 			$this->XML = new \SimpleXMLElement(file_get_contents("http://steamcommunity.com/profiles/".$this->steamID."/?xml=1"));
 		}
+	}
+
+	/** @brief get the XML content from the steam Servers, if we don't have it already, but do it using the user's customURL. */
+	private function getXMLbyURLnick($nick){
+		if($this->XML!=NULL){
+			die("Only the constructor can call me! Line: " . __LINE__);
+		}
+
+		$this->XML = new \SimpleXMLElement(file_get_contents("http://steamcommunity.com/id/{$nick}/?xml=1"));
+		if(isset($this->XML->error)){
+			if($this->XML->error->__toString()=="The specified profile could not be found."){
+				// This nick is not valid.
+				return -1;
+			}
+			else{
+				// Unknown error
+				return 1;
+			}
+		}else{
+			// success
+			$this->steamID = $this->XML->steamID64;
+		}
+		return 0;	
 	}
 	
 	/** @brief Forces an update of the XML information currently cached. */

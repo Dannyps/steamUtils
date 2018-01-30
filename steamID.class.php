@@ -4,9 +4,12 @@ namespace Dannyps\Steam;
 
 /**
  * @brief Useful functions to convert SteamIDs.
+ 
+ * \anchor steamIDFormats
  * There are several representations for steam IDs.
  * 
  * They are the following:
+ * 
  * 
  *  |Name       | Example                | Regex                     	| Supports clans
  *  |:---       | :------------          | :---                      	| :------------------------------
