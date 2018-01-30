@@ -10,10 +10,10 @@ var indexSectionsWithContent =
   0: "$_dgirst",
   1: "s",
   2: "d",
-  3: "st",
+  3: "rst",
   4: "_gir",
   5: "$",
-  6: "t"
+  6: "st"
 };
 
 var indexSectionNames =
