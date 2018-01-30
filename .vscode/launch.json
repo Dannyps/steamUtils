@@ -8,8 +8,8 @@
             "name": "Launch test script",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceRoot}/test.php",
-            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/src/test.php",
+            "cwd": "${workspaceRoot}/src",
             "port": 9000
         }
     ]
