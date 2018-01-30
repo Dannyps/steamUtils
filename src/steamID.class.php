@@ -110,7 +110,7 @@ class SteamID{
 
 	/** @return the steamID for the current steamID.
 	 * @warning If the current steamID belongs to a group, this will fail.
-	 * @throws -2 the current steamID belongs to a group, and cannot be represented in this format.
+	 * @throws -2 the current steamID belongs to a group, as it cannot be represented in this format.
 	*/
 	public function getSteamID()
 	{
