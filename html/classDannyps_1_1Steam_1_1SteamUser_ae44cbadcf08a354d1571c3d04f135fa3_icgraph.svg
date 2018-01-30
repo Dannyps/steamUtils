@@ -17,7 +17,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classDannyps_1_1Steam_1_1SteamUser.html#ae65e9eaa883d28a346748a735bae2549" target="_top" xlink:title="parse the STeamID and fetch the XML content from the steam Servers. ">
+<g id="a_node2"><a xlink:href="classDannyps_1_1Steam_1_1SteamUser.html#ae65e9eaa883d28a346748a735bae2549" target="_top" xlink:title="Dannyps\\Steam\\SteamUser\l\\__construct">
 <polygon fill="white" stroke="black" points="176,-49 176,-79 316,-79 316,-49 176,-49"/>
 <text text-anchor="start" x="184" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Dannyps\Steam\SteamUser</text>
 <text text-anchor="middle" x="246" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">\__construct</text>

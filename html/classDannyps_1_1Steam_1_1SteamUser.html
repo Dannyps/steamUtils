@@ -97,7 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Useful functions to convert SteamIDs and extract information from Steam about Users. There are several representations for steam IDs.  
+<p>Useful functions to convert SteamIDs and extract information from Steam about Users.<br/>
+There are several representations for steam IDs. Check them out at <a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#steamIDFormats">steamIDFormats</a>.<br/>
+You can also use the customURL nick defined by the user. (e.g. <code><a href="http://steamcommunity.com/id/nick">http://steamcommunity.com/id/nick</a></code>)  
  <a href="classDannyps_1_1Steam_1_1SteamUser.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Dannyps\Steam\SteamUser:</div>
@@ -115,7 +117,6 @@ Collaboration diagram for Dannyps\Steam\SteamUser:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae65e9eaa883d28a346748a735bae2549"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#ae65e9eaa883d28a346748a735bae2549">__construct</a> ($id)</td></tr>
-<tr class="memdesc:ae65e9eaa883d28a346748a735bae2549"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse the STeamID and fetch the XML content from the steam Servers.  <a href="#ae65e9eaa883d28a346748a735bae2549">More...</a><br/></td></tr>
 <tr class="separator:ae65e9eaa883d28a346748a735bae2549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b57ea3408f94776b4127c95f1fb29da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#a4b57ea3408f94776b4127c95f1fb29da">refresh</a> ()</td></tr>
 <tr class="memdesc:a4b57ea3408f94776b4127c95f1fb29da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces an update of the XML information currently cached.  <a href="#a4b57ea3408f94776b4127c95f1fb29da">More...</a><br/></td></tr>
@@ -167,6 +168,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae44cbadcf08a354d1571c3d04f135fa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#ae44cbadcf08a354d1571c3d04f135fa3">getXML</a> ()</td></tr>
 <tr class="memdesc:ae44cbadcf08a354d1571c3d04f135fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the XML content from the steam Servers, if we don't have it already.  <a href="#ae44cbadcf08a354d1571c3d04f135fa3">More...</a><br/></td></tr>
 <tr class="separator:ae44cbadcf08a354d1571c3d04f135fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac9e84e85ac83d52ce75f83f65fd9f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#a5ac9e84e85ac83d52ce75f83f65fd9f4">getXMLbyURLnick</a> ($nick)</td></tr>
+<tr class="memdesc:a5ac9e84e85ac83d52ce75f83f65fd9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the XML content from the steam Servers, if we don't have it already, but do it using the user's customURL.  <a href="#a5ac9e84e85ac83d52ce75f83f65fd9f4">More...</a><br/></td></tr>
+<tr class="separator:a5ac9e84e85ac83d52ce75f83f65fd9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -182,7 +186,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aef22e88760c4c5dcd282842439d7563c inherit pro_attribs_classDannyps_1_1Steam_1_1SteamID"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Useful functions to convert SteamIDs and extract information from Steam about Users. There are several representations for steam IDs. </p>
+<div class="textblock"><p>Useful functions to convert SteamIDs and extract information from Steam about Users.<br/>
+There are several representations for steam IDs. Check them out at <a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#steamIDFormats">steamIDFormats</a>.<br/>
+You can also use the customURL nick defined by the user. (e.g. <code><a href="http://steamcommunity.com/id/nick">http://steamcommunity.com/id/nick</a></code>) </p>
 <dl class="section author"><dt>Author</dt><dd>Daniel Silva <a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'dan'+'ny'+'ps.'+'ne'+'t'; return false;">mail@<span style="display: none;">.nosp@m.</span>dann<span style="display: none;">.nosp@m.</span>yps.n<span style="display: none;">.nosp@m.</span>et</a></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Instantiating this class will result in additional loading time for the user as an XML will be fetched from the steam servers. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -199,13 +205,23 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>parse the STeamID and fetch the XML content from the steam Servers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$id</td><td>a steamID in any of the <b>three formats</b> supported, or the customURL <b>nick</b>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">-1</td><td>on invalid SteamID. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamUser_ae65e9eaa883d28a346748a735bae2549_cgraph.svg" width="432" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamUser_ae65e9eaa883d28a346748a735bae2549_cgraph.svg" width="432" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -474,6 +490,40 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamUser_ae44cbadcf08a354d1571c3d04f135fa3_icgraph.svg" width="432" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ac9e84e85ac83d52ce75f83f65fd9f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamUser::getXMLbyURLnick </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$nick</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the XML content from the steam Servers, if we don't have it already, but do it using the user's customURL. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamUser_a5ac9e84e85ac83d52ce75f83f65fd9f4_icgraph.svg" width="432" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>

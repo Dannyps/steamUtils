@@ -16,5 +16,6 @@ var searchData=
   ['getsteamname',['getSteamName',['../classDannyps_1_1Steam_1_1SteamUser.html#a0cd17ea28144b15a991856c7b19d10ab',1,'Dannyps::Steam::SteamUser']]],
   ['getsummary',['getSummary',['../classDannyps_1_1Steam_1_1SteamUser.html#af6a237b4eb432d382c36be1a2a57d1d8',1,'Dannyps::Steam::SteamUser']]],
   ['getvisibilitystate',['getVisibilityState',['../classDannyps_1_1Steam_1_1SteamUser.html#ac8c56278a0d79f2eb0ee924f9776bcbe',1,'Dannyps::Steam::SteamUser']]],
-  ['getxml',['getXML',['../classDannyps_1_1Steam_1_1SteamUser.html#ae44cbadcf08a354d1571c3d04f135fa3',1,'Dannyps::Steam::SteamUser']]]
+  ['getxml',['getXML',['../classDannyps_1_1Steam_1_1SteamUser.html#ae44cbadcf08a354d1571c3d04f135fa3',1,'Dannyps::Steam::SteamUser']]],
+  ['getxmlbyurlnick',['getXMLbyURLnick',['../classDannyps_1_1Steam_1_1SteamUser.html#a5ac9e84e85ac83d52ce75f83f65fd9f4',1,'Dannyps::Steam::SteamUser']]]
 ];
