@@ -26,7 +26,7 @@ class SteamUser extends SteamID{
 		try{
 			parent::__construct($id);
 		}catch (\Exception $e) {
-			if($e->getcode()==-1){ //invalid steamid
+			if($e->getcode()==-1){ //invalid steamID
 				// There is one more thing we can try before giving up.
 				if($this->getXMLbyURLnick($id)==-1){
 					// Looks like the nick was a bad one.
@@ -118,9 +118,8 @@ class SteamUser extends SteamID{
 	}
 
 	/**
-	 * @todo docs
-	 * @todo review returned timestamp
-	 * 
+	 * @brief returns the date when the account was created.	
+	 * @param bool $timestamp whether the output should be a timestamp, or the steam representation of the date.
 	 * */
 	public function getMemberSince($timestamp=0){
 		if(!$timestamp)
