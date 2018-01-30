@@ -31,6 +31,9 @@ echo 'Setting up the script...'
 # Exit with nonzero exit code if anything fails
 set -e
 
+#help debugging
+set -x
+
 # Create a clean working directory for this script.
 mkdir docs
 cd docs
