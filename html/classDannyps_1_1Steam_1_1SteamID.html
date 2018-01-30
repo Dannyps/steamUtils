@@ -121,6 +121,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a00c15a4b6fd0e0d5794ed39aa98d2dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a135dbd6f357f3909924a13ff5cd31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#a11a135dbd6f357f3909924a13ff5cd31">getSteamID</a> ()</td></tr>
 <tr class="separator:a11a135dbd6f357f3909924a13ff5cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79946135da234aed79d66e968788752d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#a79946135da234aed79d66e968788752d">__construct</a> ($id)</td></tr>
+<tr class="separator:a79946135da234aed79d66e968788752d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac944a5de9251ae70cae182114e3ea012"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#ac944a5de9251ae70cae182114e3ea012">isUser</a> ()</td></tr>
+<tr class="separator:ac944a5de9251ae70cae182114e3ea012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd97426f90619d218f52acfa955f3db2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#afd97426f90619d218f52acfa955f3db2">isGroup</a> ()</td></tr>
+<tr class="separator:afd97426f90619d218f52acfa955f3db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6abb0cf955f76412e89e6203abbd7d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#aa6abb0cf955f76412e89e6203abbd7d5">getSteamID64</a> ()</td></tr>
+<tr class="separator:aa6abb0cf955f76412e89e6203abbd7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c15a4b6fd0e0d5794ed39aa98d2dc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#a00c15a4b6fd0e0d5794ed39aa98d2dc6">getSteamID3</a> ()</td></tr>
+<tr class="separator:a00c15a4b6fd0e0d5794ed39aa98d2dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a135dbd6f357f3909924a13ff5cd31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#a11a135dbd6f357f3909924a13ff5cd31">getSteamID</a> ()</td></tr>
+<tr class="separator:a11a135dbd6f357f3909924a13ff5cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -130,6 +142,9 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:abd60f1c3bd5657865ba55e3bebc22c24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#abd60f1c3bd5657865ba55e3bebc22c24">isUserBySteamID64</a> ($w)</td></tr>
+<tr class="memdesc:abd60f1c3bd5657865ba55e3bebc22c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines whether the passed steamID64 belongs to a user or a group.  <a href="#abd60f1c3bd5657865ba55e3bebc22c24">More...</a><br/></td></tr>
+<tr class="separator:abd60f1c3bd5657865ba55e3bebc22c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd60f1c3bd5657865ba55e3bebc22c24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamID.html#abd60f1c3bd5657865ba55e3bebc22c24">isUserBySteamID64</a> ($w)</td></tr>
 <tr class="memdesc:abd60f1c3bd5657865ba55e3bebc22c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines whether the passed steamID64 belongs to a user or a group.  <a href="#abd60f1c3bd5657865ba55e3bebc22c24">More...</a><br/></td></tr>
 <tr class="separator:abd60f1c3bd5657865ba55e3bebc22c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +208,66 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a79946135da234aed79d66e968788752d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$id</td><td>a steamID in any of the three formats supported. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">-1</td><td>on invalid SteamID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamID_a79946135da234aed79d66e968788752d_cgraph.svg" width="406" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a11a135dbd6f357f3909924a13ff5cd31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::getSteamID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the steamID for the current steamID. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the current steamID belongs to a group, this will fail. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">-2</td><td>the current steamID belongs to a group, and cannot be represented in this format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a11a135dbd6f357f3909924a13ff5cd31"></a>
 <div class="memitem">
 <div class="memproto">
@@ -241,6 +315,46 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a00c15a4b6fd0e0d5794ed39aa98d2dc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::getSteamID3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the steamID3 for the current steamID. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDannyps_1_1Steam_1_1SteamID_a00c15a4b6fd0e0d5794ed39aa98d2dc6_cgraph.svg" width="406" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6abb0cf955f76412e89e6203abbd7d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::getSteamID64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the steamID64 for the current steamID. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa6abb0cf955f76412e89e6203abbd7d5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -270,6 +384,38 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><b>true</b> if the <a class="el" href="classDannyps_1_1Steam_1_1SteamID.html" title="Useful functions to convert SteamIDs. ">SteamID</a> represents a group, <b>false</b> otherwise (a user). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd97426f90619d218f52acfa955f3db2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::isGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> if the <a class="el" href="classDannyps_1_1Steam_1_1SteamID.html" title="Useful functions to convert SteamIDs. ">SteamID</a> represents a group, <b>false</b> otherwise (a user). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac944a5de9251ae70cae182114e3ea012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::isUser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> if the <a class="el" href="classDannyps_1_1Steam_1_1SteamID.html" title="Useful functions to convert SteamIDs. ">SteamID</a> represents a user, <b>false</b> otherwise (a group). </dd></dl>
 
 </div>
 </div>
@@ -324,6 +470,33 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="abd60f1c3bd5657865ba55e3bebc22c24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dannyps\Steam\SteamID::isUserBySteamID64 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>determines whether the passed steamID64 belongs to a user or a group. </p>
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> if user, <b>false</b> otherwise. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="aef22e88760c4c5dcd282842439d7563c"></a>
 <div class="memitem">
@@ -370,7 +543,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="steamID_8class_8php.html">steamID.class.php</a></li>
+<li>src/<a class="el" href="src_2steamID_8class_8php.html">steamID.class.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
