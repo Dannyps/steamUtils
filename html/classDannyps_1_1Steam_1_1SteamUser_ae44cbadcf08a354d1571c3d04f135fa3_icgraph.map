@@ -1,4 +1,0 @@
-<map id="Dannyps\Steam\SteamUser\getXML" name="Dannyps\Steam\SteamUser\getXML">
-<area shape="rect" id="node2" href="$classDannyps_1_1Steam_1_1SteamUser.html#ae65e9eaa883d28a346748a735bae2549" title="parse the STeamID and fetch the XML content from the steam Servers. " alt="" coords="240,5,427,46"/>
-<area shape="rect" id="node3" href="$classDannyps_1_1Steam_1_1SteamUser.html#a4b57ea3408f94776b4127c95f1fb29da" title="Forces an update of the XML information currently cached. " alt="" coords="240,70,427,111"/>
-</map>
