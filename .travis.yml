@@ -18,7 +18,7 @@ addons:
   apt:
     packages:
       - doxygen
-      - doxygen-doc
+#      - doxygen-doc
 #      - doxygen-latex
 #      - doxygen-gui
       - graphviz
