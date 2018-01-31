@@ -4,7 +4,7 @@ var searchData=
   ['getgroups',['getGroups',['../classDannyps_1_1Steam_1_1SteamUser.html#a72abfc3905f9b4f63ffaa79612d1c2b5',1,'Dannyps::Steam::SteamUser']]],
   ['getheadline',['getHeadline',['../classDannyps_1_1Steam_1_1SteamUser.html#abe19c71f00e3046cc7a2eb389120867d',1,'Dannyps::Steam::SteamUser']]],
   ['getlocation',['getLocation',['../classDannyps_1_1Steam_1_1SteamUser.html#a89ac05d4644c31a6770ac1508f2505e0',1,'Dannyps::Steam::SteamUser']]],
-  ['getmembersince',['getMemberSince',['../classDannyps_1_1Steam_1_1SteamUser.html#a4fa2abc47eb5a425fd379badafe89c18',1,'Dannyps::Steam::SteamUser']]],
+  ['getmembersince',['getMemberSince',['../classDannyps_1_1Steam_1_1SteamUser.html#acdf4a75168ad45b5fbba5ad497c26dfb',1,'Dannyps::Steam::SteamUser']]],
   ['getprimarygroupid',['getPrimaryGroupId',['../classDannyps_1_1Steam_1_1SteamUser.html#a0127c21b002f86fb3d79f975f43afad9',1,'Dannyps::Steam::SteamUser']]],
   ['getprimarygroupname',['getPrimaryGroupName',['../classDannyps_1_1Steam_1_1SteamUser.html#aab8321ec0be8a54c160e55101b77963d',1,'Dannyps::Steam::SteamUser']]],
   ['getprivacystate',['getPrivacyState',['../classDannyps_1_1Steam_1_1SteamUser.html#adc339fc739fa066d4a6471223f5951ac',1,'Dannyps::Steam::SteamUser']]],

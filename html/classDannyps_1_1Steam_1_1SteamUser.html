@@ -133,9 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac8c56278a0d79f2eb0ee924f9776bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f54d853e0a1fa1dd2cb310f1427ea9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#a0f54d853e0a1fa1dd2cb310f1427ea9a">getCustomURL</a> ($full=TRUE)</td></tr>
 <tr class="separator:a0f54d853e0a1fa1dd2cb310f1427ea9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa2abc47eb5a425fd379badafe89c18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#a4fa2abc47eb5a425fd379badafe89c18">getMemberSince</a> ($timestamp=0)</td></tr>
-<tr class="memdesc:a4fa2abc47eb5a425fd379badafe89c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the date when the account was created.  <a href="#a4fa2abc47eb5a425fd379badafe89c18">More...</a><br/></td></tr>
-<tr class="separator:a4fa2abc47eb5a425fd379badafe89c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf4a75168ad45b5fbba5ad497c26dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#acdf4a75168ad45b5fbba5ad497c26dfb">getMemberSince</a> ($timestamp=FALSE)</td></tr>
+<tr class="separator:acdf4a75168ad45b5fbba5ad497c26dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe19c71f00e3046cc7a2eb389120867d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#abe19c71f00e3046cc7a2eb389120867d">getHeadline</a> ()</td></tr>
 <tr class="separator:abe19c71f00e3046cc7a2eb389120867d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ac05d4644c31a6770ac1508f2505e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDannyps_1_1Steam_1_1SteamUser.html#a89ac05d4644c31a6770ac1508f2505e0">getLocation</a> ()</td></tr>
@@ -246,7 +245,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the customURL for this user. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$full</td><td>(defaults to true) whether the returned URL should contain the text "https://steamcommunity.com/id/" or not (thus not being an URL). </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$full</td><td>whether the returned URL should contain the text "https://steamcommunity.com/id/" or not (thus not being an URL). </td></tr>
   </table>
   </dd>
 </dl>
@@ -265,7 +264,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>docs </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -289,7 +287,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the user's Headline </dd></dl>
 
 </div>
 </div>
@@ -305,11 +303,11 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the user's Location </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4fa2abc47eb5a425fd379badafe89c18"></a>
+<a class="anchor" id="acdf4a75168ad45b5fbba5ad497c26dfb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -317,13 +315,12 @@ Here is the caller graph for this function:</div>
           <td class="memname">Dannyps\Steam\SteamUser::getMemberSince </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$timestamp</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>$timestamp</em> = <code>FALSE</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>returns the date when the account was created. </p>
+<dl class="section return"><dt>Returns</dt><dd>the date when the account was created. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$timestamp</td><td>whether the output should be a timestamp, or the steam representation of the date. </td></tr>
@@ -345,7 +342,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>docs </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -369,7 +366,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>docs </dd></dl>
 
 </div>
 </div>
@@ -401,7 +398,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the user's Real Name </dd></dl>
 
 </div>
 </div>
@@ -433,7 +430,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the name of the user/clan. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the user. </dd></dl>
 
 </div>
 </div>
@@ -449,7 +446,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>docs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the user's Summary </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>xml only. </dd></dl>
 
 </div>
 </div>
@@ -548,7 +546,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the name of the user/clan. </dd></dl>
+<p>bool </p>
+<dl class="section return"><dt>Returns</dt><dd>whether the user is online. </dd></dl>
 
 </div>
 </div>

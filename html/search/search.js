@@ -7,13 +7,13 @@
 
 var indexSectionsWithContent =
 {
-  0: "$_dgirst",
+  0: "$_adgirst",
   1: "s",
   2: "d",
-  3: "st",
+  3: "ist",
   4: "_gir",
   5: "$",
-  6: "t"
+  6: "at"
 };
 
 var indexSectionNames =
