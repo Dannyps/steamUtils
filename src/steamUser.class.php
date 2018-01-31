@@ -76,12 +76,12 @@ class SteamUser extends SteamID{
 		$this->getXML();
 	}
 
-	/** @return the name of the user/clan. */
+	/** @return the name of the user. */
 	public function getSteamName(){
 		return $this->XML->steamID->__toString();
 	}
 
-	/** @return the name of the user/clan. */
+	/** bool @return whether the user is online. */
 	public function isOnline(){
 		return ($this->XML->onlineState=="online");
 	}
@@ -108,7 +108,7 @@ class SteamUser extends SteamID{
 
 	/**
 	 * @return the customURL for this user.
-	 * @param $full (defaults to true) whether the returned URL should contain the text "https://steamcommunity.com/id/" or not (thus not being an URL).
+	 * @param bool $full whether the returned URL should contain the text "https://steamcommunity.com/id/" or not (thus not being an URL).
 	 * */
 	public function getCustomURL($full = TRUE){
 		if($full)
@@ -118,10 +118,10 @@ class SteamUser extends SteamID{
 	}
 
 	/**
-	 * @brief returns the date when the account was created.	
+	 * @return the date when the account was created.	
 	 * @param bool $timestamp whether the output should be a timestamp, or the steam representation of the date.
 	 * */
-	public function getMemberSince($timestamp=0){
+	public function getMemberSince($timestamp = FALSE){
 		if(!$timestamp)
 			return $this->XML->memberSince;
 		else{
@@ -135,27 +135,40 @@ class SteamUser extends SteamID{
 		}
 	}
 
-	/**@todo docs */
+	/**
+	 * @return the user's Headline
+	 */
 	public function getHeadline(){
 		return $this->XML->headline->__toString();
 	}
 	
-	/**@todo docs */
+	/**
+	 * @return the user's Location
+	 */
 	public function getLocation(){
 		return $this->XML->location->__toString();
 	}
 
-	/**@todo docs */
+	/**
+	 * @return the user's Real Name
+	 */
 	public function getRealName(){
 		return $this->XML->realname->__toString();
 	}
 
-	/**@todo docs */
+	/**
+	 * @return the user's Summary
+	 * @remark xml only.
+	 */
 	public function getSummary(){
 		return $this->XML->summary->__toString();
 	}
 
-	/**@todo docs */
+	/**
+	 * Will return an array of arrays. Each subarray is of the following structure:\n
+	 * @var isPrimary bool
+	 * @return the user's groups in the structure above
+	 */
 	public function getGroups(){
 		$ret = array();
 		foreach($this->XML->groups->group as $group){
