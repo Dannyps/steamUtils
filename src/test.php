@@ -1,5 +1,5 @@
 <?php
-
+$time_start = microtime(true); 
 require_once("steamUser.class.php");
 
 
@@ -9,3 +9,14 @@ var_dump( (new Steam\SteamUser("dannyps"))->getSummary());
 #echo (new SteamID("103582791429521412"))->profileInfo->getSteamName();
  
 echo PHP_EOL;
+
+
+//------------------- script end
+
+$time_end = microtime(true);
+
+//dividing with 60 will give the execution time in minutes other wise seconds
+$execution_time = ($time_end - $time_start);
+
+//execution time of the script
+echo 'Total Execution Time: '.$execution_time.'s';

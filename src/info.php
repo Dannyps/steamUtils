@@ -15,12 +15,12 @@
    - It's deprecated.
    - It's XML (hehehe).
    \section scraper Overcoming the slow updates issue
-   A sraper API, made with the help of **xPath**, may overcome this serious problem that both APIs suffer from.
+   A scraper API, made with the help of **xPath**, may overcome this serious problem that both APIs suffer from.
    \subsection scraperMotives How can it help?
    As noted before, both APIS have a not so small delay until some information is updated.\n
    For example, the player's summary can take up to several hours to be updated on the XML API,
    and the online status also takes a few minutes to be updated on the JSON API.
-   There is, however, a third way to aquire profile information, that is not subject to these delays. It's scraping, all right.
+   There is, however, a third way to acquire profile information, that is not subject to these delays. It's scraping, all right.
    It is, however, much more volatile, and requires much more maintenance.
    Thus, I write bellow:
    \todo Implement a **Scraper** for the most important and volatile stats.
