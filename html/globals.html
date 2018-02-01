@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>steamUtils: Are you dumb? Steam has a new API!</title>
+<title>steamUtils: File Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,10 +37,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -59,6 +59,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,49 +86,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-</div><!-- top -->
-<div class="header">
-  <div class="headertitle">
-<div class="title">Are you dumb? Steam has a new API! </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#xml">XML vs JSON API comparison</a><ul><li class="level2"><a href="#xmlPros">The pros of using the old XML API</a></li>
-<li class="level2"><a href="#xmlCons">The cons of using the old XML API</a></li>
-</ul>
+<div class="textblock">Here is a list of all file members with links to the files they belong to:</div><ul>
+<li>$execution_time
+: <a class="el" href="test_8php.html#a2d8dc53e1ba1a00dd213589f7a5f4377">test.php</a>
 </li>
-<li class="level1"><a href="#scraper">Overcoming the slow updates issue</a><ul><li class="level2"><a href="#scraperMotives">How can it help?</a></li>
-</ul>
+<li>$time_end
+: <a class="el" href="test_8php.html#a77f9b5c7480ad8fa3231d311d4b6feb3">test.php</a>
+</li>
+<li>$time_start
+: <a class="el" href="test_8php.html#a44d4a5ef593dd745482e1f2adb2f7774">test.php</a>
 </li>
 </ul>
-</div>
-<div class="textblock"><p>The main reasons why I have considered using the old API and how that can be a good thing (or not). </p>
-<h1><a class="anchor" id="xml"></a>
-XML vs JSON API comparison</h1>
-<p>Let's take a peak at the points, shall we? </p>
-<h2><a class="anchor" id="xmlPros"></a>
-The pros of using the old XML API</h2>
-<ul>
-<li>It supports some community options that are not available on the new API (e.g. getSummary, ...).</li>
-<li>It's about 5 times faster than the new API.</li>
-<li>It <b>does not require</b> an API Key! </li>
-</ul>
-<h2><a class="anchor" id="xmlCons"></a>
-The cons of using the old XML API</h2>
-<ul>
-<li>It may be a litle slower to update (yet to be checked).</li>
-<li>It's deprecated.</li>
-<li>It's XML (hehehe). </li>
-</ul>
-<h1><a class="anchor" id="scraper"></a>
-Overcoming the slow updates issue</h1>
-<p>A scraper API, made with the help of <b>xPath</b>, may overcome this serious problem that both APIs suffer from. </p>
-<h2><a class="anchor" id="scraperMotives"></a>
-How can it help?</h2>
-<p>As noted before, both APIS have a not so small delay until some information is updated.<br/>
- For example, the player's summary can take up to several hours to be updated on the XML API, and the online status also takes a few minutes to be updated on the JSON API. There is, however, a third way to acquire profile information, that is not subject to these delays. It's scraping, all right. It is, however, much more volatile, and requires much more maintenance. Thus, I write bellow: </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Implement a <b>Scraper</b> for the most important and volatile stats. </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
