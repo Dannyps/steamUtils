@@ -3,6 +3,7 @@
 namespace Dannyps\Steam;
 
 require("steamID.class.php");
+require("steamGame.class.php");
 
 /**
  * @brief Useful functions to convert SteamIDs and extract information from %Steam about Users.\n
@@ -194,6 +195,32 @@ class SteamUser extends SteamID{
 			}
 		}
 		return -1;
+	}
+
+	/**@todo docs */
+	public function getHoursPlayedInLast2Weeks($original=true){
+		if($original){
+			return $this->XML->hoursPlayed2Wk->__toString();
+		}else{
+			return $this->XML->hoursPlayed2Wk*60*60; //seconds
+		}
+		return -1;
+	}
+
+
+	/**@todo docs
+	 * @return false if unknown, steamGame array otherwise.
+	*/
+	public function getMostPlayedGames(){
+		if(!isset($this->XML->mostPlayedGames)){
+			return false;
+		}else{
+			$retArr=array();
+			foreach($this->XML->mostPlayedGames->mostPlayedGame as $game){
+				array_push($retArr, new \Dannyps\Steam\SteamGame($game));
+			}
+			return $retArr;
+		}
 	}
 
 }

@@ -5,12 +5,12 @@ require_once("steamUser.class.php");
 
 use \Dannyps\Steam;
 
-var_dump( (new Steam\SteamUser("dannyps"))->getSummary());
+var_dump( (new Steam\SteamUser(76561198089393237))->getMostPlayedGames());
+var_dump( (new Steam\SteamUser('dannyps'))->getMostPlayedGames());
 #echo (new SteamID("103582791429521412"))->profileInfo->getSteamName();
  
+
 echo PHP_EOL;
-
-
 //------------------- script end
 
 $time_end = microtime(true);
