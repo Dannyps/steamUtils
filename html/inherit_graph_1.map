@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classDannyps_1_1Steam_1_1SteamID.html" title="Useful functions to convert SteamIDs. " alt="" coords="6,5,178,32"/>
+<area shape="rect" id="node2" href="$classDannyps_1_1Steam_1_1SteamUser.html" title="Useful functions to convert SteamIDs and extract information from Steam about Users. There are several representations for steam IDs. Check them out at steamIDFormats. You can also use the customURL nick defined by the user. (e.g. http://steamcommunity.com/id/nick) " alt="" coords="227,5,413,32"/>
+</map>
