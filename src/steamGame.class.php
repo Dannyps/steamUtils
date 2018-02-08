@@ -30,6 +30,7 @@ class SteamGame{
 
 	/** @brief The JSON assoc array containing the game's info. */
     private $JSON=NULL;
+    
     /** @brief The XML Object containing the game's info. */
     private $XML=NULL;
 
@@ -67,18 +68,33 @@ class SteamGame{
 
     /**
      * @todo docs
+     * @throws Exception AppName not yet supported.
      */
     private function __constructFromAppName($name){
-        $this->appID=$id;
-        $this->getJSON();
+        throw new \Exception("Not (yet) supported", -1);
     }
 
 	/** @brief get the JSON content from the steam API, if we don't have it already. */
-	private function getJSON(){
+	private function getJSON() :bool{
 		if($this->JSON==NULL){ // we don't have it yet.
 			$this->JSON = json_decode(file_get_contents("http://store.steampowered.com/api/appdetails?appids=".$this->appID));
-		}
-	}
+        }else{
+            return false;
+        }
+        if($this->JSON->{$this->appID}->success==FALSE){
+            throw new \Exception("Game {$this->appID} does not exist!", -2);
+        }
+        $this->JSON=$this->JSON->{$this->appID}->data;
+        return true;
+    }
+    
+    public function getGameName() :String{
+        if($this->XML!=NULL){
+            return $this->XML->gameName->__toString();
+        }else if($this->JSON!==NULL || $this->getJson()){ // notice getJson() only runs if $this->JSON is NULL.
+            return $this->JSON->{$this->appID}->data->name;
+        }
+    }
 
 }
 

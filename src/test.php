@@ -5,8 +5,9 @@ require_once("steamUser.class.php");
 
 use \Dannyps\Steam;
 
-var_dump( (new Steam\SteamUser(76561198089393237))->getMostPlayedGames());
-var_dump( (new Steam\SteamUser('dannyps'))->getMostPlayedGames());
+var_dump( (new Steam\SteamUser(76561198089393237))->getMostPlayedGames()[0]->getGameName());
+var_dump( (new Steam\SteamUser('dannyps'))->getMostPlayedGames()[0]->getGameName());
+var_dump( (new Steam\SteamGame(10))->getGameName());
 #echo (new SteamID("103582791429521412"))->profileInfo->getSteamName();
  
 
