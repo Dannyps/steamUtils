@@ -1,0 +1,21 @@
+general:
+  branches:
+    only:
+      - master
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Avoid hosts unknown for github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Install dependencies
+          command: apt-get update && apt-get install doxygen graphviz git -y
+      - run:
+          name: Run the script
+          command: ls -lah && bash generateDocumentationAndDeployCircle.sh
+
