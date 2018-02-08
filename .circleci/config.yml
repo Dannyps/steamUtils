@@ -3,6 +3,11 @@ general:
     only:
       - master
 version: 2
+dependencies:
+  cache_directories:
+    - "~/.apt-cache"
+  pre:
+    - sudo rm -rf /var/cache/apt/archives && sudo ln -s ~/.apt-cache /var/cache/apt/archives && mkdir -p ~/.apt-cache/partial
 jobs:
   build:
     docker:
