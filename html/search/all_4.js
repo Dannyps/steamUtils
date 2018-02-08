@@ -1,6 +1,7 @@
 var searchData=
 [
   ['getcustomurl',['getCustomURL',['../classDannyps_1_1Steam_1_1SteamUser.html#a0f54d853e0a1fa1dd2cb310f1427ea9a',1,'Dannyps::Steam::SteamUser']]],
+  ['getgamename',['getGameName',['../classDannyps_1_1Steam_1_1SteamGame.html#a9305941003f530c695ed7051f18e3036',1,'Dannyps::Steam::SteamGame']]],
   ['getgroups',['getGroups',['../classDannyps_1_1Steam_1_1SteamUser.html#a72abfc3905f9b4f63ffaa79612d1c2b5',1,'Dannyps::Steam::SteamUser']]],
   ['getheadline',['getHeadline',['../classDannyps_1_1Steam_1_1SteamUser.html#abe19c71f00e3046cc7a2eb389120867d',1,'Dannyps::Steam::SteamUser']]],
   ['gethoursplayedinlast2weeks',['getHoursPlayedInLast2Weeks',['../classDannyps_1_1Steam_1_1SteamUser.html#a4632ff20735dfd479543b69accd6a08b',1,'Dannyps::Steam::SteamUser']]],

@@ -106,21 +106,16 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="classDannyps_1_1Steam_1_1SteamGame.html#a5905755884ee8ff8b1a217909d11fadf" target="_top" xlink:title="get the JSON content from the steam API, if we don&#39;t have it already. ">
-<polygon fill="white" stroke="black" points="364.5,-49 364.5,-79 509.5,-79 509.5,-49 364.5,-49"/>
-<text text-anchor="start" x="372.5" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Dannyps\Steam\SteamGame</text>
-<text text-anchor="middle" x="437" y="-56" font-family="Helvetica,sans-Serif" font-size="10.00">\getJSON</text>
+<polygon fill="white" stroke="black" points="364.5,-98 364.5,-128 509.5,-128 509.5,-98 364.5,-98"/>
+<text text-anchor="start" x="372.5" y="-116" font-family="Helvetica,sans-Serif" font-size="10.00">Dannyps\Steam\SteamGame</text>
+<text text-anchor="middle" x="437" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">\getJSON</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M311.475,-97.8986C330.297,-92.7747 351.494,-87.0044 370.991,-81.6968"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="371.979,-85.0554 380.708,-79.0516 370.14,-78.3012 371.979,-85.0554"/>
-</g>
-<!-- Node5&#45;&gt;Node3 -->
-<g id="edge5" class="edge"><title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M311.475,-30.1014C330.297,-35.2253 351.494,-40.9956 370.991,-46.3032"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="370.14,-49.6988 380.708,-48.9484 371.979,-42.9446 370.14,-49.6988"/>
+<path fill="none" stroke="midnightblue" d="M327.658,-113C336.325,-113 345.23,-113 354.031,-113"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="354.295,-116.5 364.295,-113 354.294,-109.5 354.295,-116.5"/>
 </g>
 </g>
 </svg>
