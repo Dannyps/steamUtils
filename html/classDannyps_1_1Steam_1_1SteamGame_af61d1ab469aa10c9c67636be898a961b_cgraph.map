@@ -1,6 +1,6 @@
 <map id="Dannyps\Steam\SteamGame\__construct" name="Dannyps\Steam\SteamGame\__construct">
-<area shape="rect" id="node2" href="$classDannyps_1_1Steam_1_1SteamGame.html#a91e8fab5ccd159a01df06a0dc5dea206" title="Dannyps\\Steam\\SteamGame\l\\__constructFromAppID" alt="" coords="264,5,475,47"/>
-<area shape="rect" id="node4" href="$classDannyps_1_1Steam_1_1SteamGame.html#a80c76cddfa1a50b0793a5d1052513e07" title="Dannyps\\Steam\\SteamGame\l\\__constructFromXML" alt="" coords="264,71,475,112"/>
-<area shape="rect" id="node5" href="$classDannyps_1_1Steam_1_1SteamGame.html#a4bc403f819b8f173f8b388166fff6b7e" title="Dannyps\\Steam\\SteamGame\l\\__constructFromAppName" alt="" coords="264,136,475,177"/>
-<area shape="rect" id="node3" href="$classDannyps_1_1Steam_1_1SteamGame.html#a5905755884ee8ff8b1a217909d11fadf" title="get the JSON content from the steam API, if we don&#39;t have it already. " alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node2" href="$classDannyps_1_1Steam_1_1SteamGame.html#a91e8fab5ccd159a01df06a0dc5dea206" title="Dannyps\\Steam\\SteamGame\l\\__constructFromAppID" alt="" coords="249,5,442,46"/>
+<area shape="rect" id="node4" href="$classDannyps_1_1Steam_1_1SteamGame.html#a80c76cddfa1a50b0793a5d1052513e07" title="Dannyps\\Steam\\SteamGame\l\\__constructFromXML" alt="" coords="249,70,442,111"/>
+<area shape="rect" id="node5" href="$classDannyps_1_1Steam_1_1SteamGame.html#a4bc403f819b8f173f8b388166fff6b7e" title="Dannyps\\Steam\\SteamGame\l\\__constructFromAppName" alt="" coords="249,135,442,177"/>
+<area shape="rect" id="node3" href="$classDannyps_1_1Steam_1_1SteamGame.html#a5905755884ee8ff8b1a217909d11fadf" title="get the JSON content from the steam API, if we don&#39;t have it already. " alt="" coords="491,5,685,46"/>
 </map>
