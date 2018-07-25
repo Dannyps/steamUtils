@@ -92,7 +92,9 @@ class SteamGame{
         if($this->XML!=NULL){
             return $this->XML->gameName->__toString();
         }else if($this->JSON!==NULL || $this->getJson()){ // notice getJson() only runs if $this->JSON is NULL.
-            return $this->JSON->{$this->appID}->data->name;
+            return $this->JSON->name;
+        }else{
+        	return "";
         }
     }
 
