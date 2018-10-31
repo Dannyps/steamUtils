@@ -4,4 +4,7 @@ A set of useful classes to convert SteamIDs, and extract information from Steam 
 ## [Documentation](https://dannyps.github.io/steamUtils/html/annotated.html)
   ### Status
   [![CircleCI](https://circleci.com/gh/Dannyps/steamUtils/tree/master.svg?style=svg)](https://circleci.com/gh/Dannyps/steamUtils/tree/master)
-  
+
+## Contributions
+
+Feel free to contribute by means of pull request.
