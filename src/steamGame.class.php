@@ -28,15 +28,20 @@ namespace Dannyps\Steam;
  */
 class SteamGame{
 
-	/** @brief The JSON assoc array containing the game's info. */
+	/**
+	 * @brief The JSON assoc array containing the game's info.
+	 */
     private $JSON=NULL;
     
-    /** @brief The XML Object containing the game's info. */
+    /**
+     * @brief The XML Object containing the game's info.
+     */
     private $XML=NULL;
 
-    /** @param $id a *%Steam Appplication ID*, the XML resultant of a previous query, or a game name.
+    /**
+     * @param $id a *%Steam Appplication ID*, the XML resultant of a previous query, or a game name.
      * @throw -1 on invalid %SteamID.
-     * */
+     */
 	public function __construct($id){
 		if(is_integer($id)){ //appID
             $this->__constructFromAppID($id);
@@ -74,7 +79,9 @@ class SteamGame{
         throw new \Exception("Not (yet) supported", -1);
     }
 
-	/** @brief get the JSON content from the steam API, if we don't have it already. */
+	/**
+	 * @brief get the JSON content from the steam API, if we don't have it already.
+	 */
 	private function getJSON() :bool{
 		if($this->JSON==NULL){ // we don't have it yet.
 			$this->JSON = json_decode(file_get_contents("http://store.steampowered.com/api/appdetails?appids=".$this->appID));
